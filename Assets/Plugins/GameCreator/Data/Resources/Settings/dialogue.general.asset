@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0c9c208c3cd34d6f91c7c2c5d7892c2, type: 3}
+  m_Name: dialogue.general
+  m_EditorClassIdentifier: 
+  m_Repository:
+    rid: 501266290078908427
+  references:
+    version: 2
+    RefIds:
+    - rid: 501266290078908427
+      type: {class: DialogueRepository, ns: GameCreator.Runtime.Dialogue, asm: GameCreator.Runtime.Dialogue}
+      data:
+        m_Values:
+          m_Values:
+          - rid: 501266361636880443
+    - rid: 501266361636880443
+      type: {class: Value, ns: GameCreator.Runtime.Dialogue, asm: GameCreator.Runtime.Dialogue}
+      data:
+        m_IsExpanded: 1
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Key:
+          m_String: friend-name
+        m_Value:
+          m_Property:
+            rid: 501266361636880446
+        m_InBold: 0
+        m_InItalic: 0
+        m_UseColor: 0
+        m_Color:
+          m_Property:
+            rid: 501266361636880445
+    - rid: 501266361636880445
+      type: {class: GetColorColorsYellow, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 501266361636880446
+      type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: alice
