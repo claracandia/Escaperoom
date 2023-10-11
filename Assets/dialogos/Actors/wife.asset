@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09adff397b704c4985383dd1017864ba, type: 3}
+  m_Name: wife
+  m_EditorClassIdentifier: 
+  m_Actant:
+    m_Name:
+      m_Property:
+        rid: 6826004893506994420
+    m_Description:
+      m_Property:
+        rid: 6826004893506994421
+  m_Expressions:
+    m_Expressions:
+    - m_IsExpanded: 1
+      m_Breakpoint: 0
+      m_IsEnabled: 1
+      m_Id:
+        m_String: neutral
+      m_Sprite: {fileID: 21300000, guid: 6bab03ee3abd4b041acf1bd983108700, type: 3}
+      m_InstructionsOnStart:
+        m_Instructions: []
+      m_InstructionsOnEnd:
+        m_Instructions: []
+      m_OverrideSpeechSkin: {fileID: 0}
+    - m_IsExpanded: 1
+      m_Breakpoint: 0
+      m_IsEnabled: 1
+      m_Id:
+        m_String: doubt
+      m_Sprite: {fileID: 21300000, guid: 1c88a55c2c8cf474cb6bb495d9138465, type: 3}
+      m_InstructionsOnStart:
+        m_Instructions: []
+      m_InstructionsOnEnd:
+        m_Instructions: []
+      m_OverrideSpeechSkin: {fileID: 0}
+    - m_IsExpanded: 1
+      m_Breakpoint: 0
+      m_IsEnabled: 1
+      m_Id:
+        m_String: surprise
+      m_Sprite: {fileID: 21300000, guid: 21140bb4e91956b4a8bcf8ecb6630cd8, type: 3}
+      m_InstructionsOnStart:
+        m_Instructions: []
+      m_InstructionsOnEnd:
+        m_Instructions: []
+      m_OverrideSpeechSkin: {fileID: 0}
+  m_Typewriter:
+    m_UseTypewriter: 1
+    m_Frequency: 10
+    m_Gibberish:
+      m_Property:
+        rid: 6826004893506994422
+    m_Pitch: {x: 0.9, y: 1.1}
+  m_OverrideSpeechSkin: {fileID: 0}
+  m_Portrait: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 6826004893506994420
+      type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: Prisoner's wife
+    - rid: 6826004893506994421
+      type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 
+    - rid: 6826004893506994422
+      type: {class: GetAudioNone, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}

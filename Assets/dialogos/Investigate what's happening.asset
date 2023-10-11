@@ -1,0 +1,170 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c372b025c8c4d92bf11f951ee3d5042, type: 3}
+  m_Name: Investigate what's happening
+  m_EditorClassIdentifier: 
+  m_Title:
+    m_Property:
+      rid: 501266454678077469
+  m_Description:
+    m_Property:
+      rid: 501266674547687464
+  m_Color:
+    m_Property:
+      rid: 501266454678077471
+  m_Sprite:
+    m_Property:
+      rid: 501266454678077472
+  m_Type: 0
+  m_SortOrder: 0
+  m_UniqueId:
+    m_SerializedID:
+      m_String: a85d9aca-2f84-420a-b174-e76cc8146ac6
+  m_Tasks:
+    rid: 501266454678077473
+  m_OnActivate:
+    m_Instructions: []
+  m_OnDeactivate:
+    m_Instructions: []
+  m_OnComplete:
+    m_Instructions:
+    - rid: 501266627498868933
+  m_OnAbandon:
+    m_Instructions: []
+  m_OnFail:
+    m_Instructions: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 501266454678077469
+      type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: Investigate what happened
+    - rid: 501266454678077471
+      type: {class: GetColorColorsWhite, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 501266454678077472
+      type: {class: GetSpriteNone, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 501266454678077473
+      type: {class: TasksTree, ns: GameCreator.Runtime.Quests, asm: GameCreator.Runtime.Quests}
+      data:
+        m_Dirty: 34543
+        m_Data:
+          m_Keys: 78e84ae4
+          m_Values:
+          - m_Id: -464852872
+            m_Value:
+              rid: 501266454678077474
+        m_Nodes:
+          m_Keys: 78e84ae4
+          m_Values:
+          - m_Id: -464852872
+            m_Parent: -1
+            m_Children: 
+        m_Roots: 78e84ae4
+    - rid: 501266454678077474
+      type: {class: Task, ns: GameCreator.Runtime.Quests, asm: GameCreator.Runtime.Quests}
+      data:
+        m_Completion: 0
+        m_IsHidden: 0
+        m_Name:
+          m_Property:
+            rid: 501266454678077475
+        m_Description:
+          m_Property:
+            rid: 501266454678077476
+        m_Color:
+          m_Property:
+            rid: 501266454678077477
+        m_Sprite:
+          m_Property:
+            rid: 501266454678077478
+        m_UseCounter: 0
+        m_CountTo:
+          m_Property:
+            rid: 501266454678077479
+        m_ValueFrom:
+          m_Property:
+            rid: 501266454678077480
+        m_CheckWhen:
+          rid: 501266454678077481
+        m_OnActivate:
+          m_Instructions:
+          - rid: 6826005006004256796
+        m_OnDeactivate:
+          m_Instructions: []
+        m_OnComplete:
+          m_Instructions: []
+        m_OnAbandon:
+          m_Instructions: []
+        m_OnFail:
+          m_Instructions: []
+    - rid: 501266454678077475
+      type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: talk with the prisoner
+    - rid: 501266454678077476
+      type: {class: GetStringTextArea, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Text:
+          m_Text: 
+    - rid: 501266454678077477
+      type: {class: GetColorColorsWhite, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 501266454678077478
+      type: {class: GetSpriteNone, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 501266454678077479
+      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 3
+    - rid: 501266454678077480
+      type: {class: GetDecimalGlobalName, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Variable:
+          m_TypeID:
+            m_String: number
+          m_Variable: {fileID: 0}
+          m_Name:
+            m_String: 
+            m_ID: 0
+    - rid: 501266454678077481
+      type: {class: EventOnLateUpdate, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+    - rid: 501266627498868933
+      type: {class: InstructionQuestsActivate, ns: GameCreator.Runtime.Quests, asm: GameCreator.Runtime.Quests}
+      data:
+        m_IsExpanded: 1
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Journal:
+          m_Property:
+            rid: 501266627498868934
+        m_Quest:
+          m_Property:
+            rid: 501266627498868935
+        m_WaitToComplete: 0
+    - rid: 501266627498868934
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 501266627498868935
+      type: {class: GetQuestInstance, ns: GameCreator.Runtime.Quests, asm: GameCreator.Runtime.Quests}
+      data:
+        m_Quest: {fileID: 11400000, guid: 4e5405b4ae758484f8e827cf1b0c1ae0, type: 2}
+    - rid: 501266674547687464
+      type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: you found a dead body
+    - rid: 6826005006004256796
+      type: {class: InstructionCommonAudioMusicStop, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 1
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_AudioClip: {fileID: 8300000, guid: 47a07f7874b2b3b408511e3fb9c03857, type: 3}
+        m_WaitToComplete: 1
+        transitionOut: 5
